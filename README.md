@@ -1,5 +1,7 @@
 ## Dynamic Diagram Flow (React Flow Assignment)
 
+## Live : https://dynamic-diagram-flow-rho.vercel.app
+ 
 A dynamic, interactive diagram-building application built with React and React Flow. This project allows users to create, modify, and delete nodes in a flowchart-style diagram. All changes are saved directly to the browser's localStorage, so your work persists even after refreshing the page.
 
 ## Application Preview
@@ -38,24 +40,24 @@ Here is the high-level structure of the project:
 dynamic-diagram-flow/
 │
 ├── assets/
-│   └── app-preview.png      # <-- Your app screenshot
+│   └── app-preview.png      
 │
 ├── public/
-│   └── index.html           # Bootstrap CSS is linked here
+│   └── index.html           
 │
 ├── src/
 │   ├── components/
-│   │   ├── Diagram.js       # The React Flow rendering component (controlled)
-│   │   └── Sidebar.js       # The UI for adding/editing/deleting nodes
+│   │   ├── Diagram.js      
+│   │   └── Sidebar.js       
 │   │
-│   ├── App.js               # Main app component (handles all state & localStorage)
-│   ├── App.css              # Styles for the responsive layout
-│   ├── index.js             # Entry point (imports Bootstrap/React Flow CSS)
-│   └── metadata.json        # The default/initial diagram data
+│   ├── App.js               
+│   ├── App.css              
+│   ├── index.js            
+│   └── metadata.json        
 │
 ├── .gitignore
 ├── package.json
-└── README.md                <-- You are here
+└── README.md               
 
 ```
 
