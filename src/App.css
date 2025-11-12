@@ -1,0 +1,45 @@
+/* Make the app take up the full screen */
+.app-container {
+  display: flex;
+  flex-direction: row; /* Arrange children (sidebar, diagram) side-by-side */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Prevents scrolling on the main page */
+}
+
+/* Styles for the Sidebar
+*/
+.sidebar {
+  width: 300px; /* Fixed width for the sidebar */
+  flex-shrink: 0; /* Prevents the sidebar from shrinking */
+  background-color: #f8f9fa; /* A light grey background from Bootstrap */
+  padding: 20px;
+  border-right: 1px solid #dee2e6; /* A subtle border */
+  overflow-y: auto; /* Allows sidebar to scroll if content is too tall */
+}
+
+/* Styles for the Diagram (React Flow)
+*/
+.diagram-container {
+  flex-grow: 1; /* Allows the diagram to take up all remaining space */
+  height: 100%; /* Take up full height of the parent */
+}
+
+/* Responsive styles for smaller screens 
+*/
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column; /* Stack sidebar on top of diagram */
+  }
+
+  .sidebar {
+    width: 100%; /* Full width on mobile */
+    height: 40%; /* Take up 40% of the screen height */
+    border-right: none;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .diagram-container {
+    height: 60%; /* Take up remaining 60% of the screen height */
+  }
+}
