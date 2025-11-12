@@ -74,7 +74,7 @@ Installation & Setup
 
 Clone the repository (or download and unzip the folder):
 
-git clone [https://your-repository-url/dynamic-diagram-flow.git](https://github.com/vinaykumargajjela/Dynamic-Diagram-Flow.git)
+git clone https://github.com/vinaykumargajjela/Dynamic-Diagram-Flow.git
 
 
 Navigate to the project directory:
